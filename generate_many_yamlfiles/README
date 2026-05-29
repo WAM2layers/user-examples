@@ -1,0 +1,12 @@
+The script_MarkHilhorst.py does the following:
+
+For each date that you provide the script creates a separate config (yaml) file in an output folder with the correct time window:
+ - Tagging: the provided date
+ - Tracking and pre-processing: 15 days back from the tagging date
+ - The created config (yaml) file is saved as 'event_YYYMMDD.yaml' in the folder configs_output/
+ - Tagging region remains fixed
+ - Tracking domain remains fixed
+
+As input to run the script_MarkHihorst.py file you need to provide:
+ - a template yaml file (in this case called eif2.yaml)
+ - a text file with dates (formatted as 1 date per row, date in format YYYY-MM-DD)
